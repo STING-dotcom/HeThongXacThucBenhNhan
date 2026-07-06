@@ -50,10 +50,3 @@ Bệnh án được bảo vệ 4 lớp, tự động chạy khi bấm gửi:
 7. Server kiểm tra lần lượt: vân tay dữ liệu → chữ ký bác sĩ → mật khẩu
 8. Nếu OK → giải mã, hiển thị nội dung, báo ACK
 9. Nếu sai → báo NACK kèm lý do
-
-## Cải tiến so với bản cũ
-
-- **Không còn hardcode mật khẩu** — đọc từ biến môi trường `PASSWORD_SERVER`, an toàn hơn
-- **Chống Replay Attack** — mỗi lần gửi có mã thử thách riêng, kẻ trộm gói tin cũ không thể dùng lại
-- **Hiển thị ID bệnh án** trên log Server để dễ theo dõi
-- **Tên file linh hoạt** — Server lưu đúng tên file Client gửi lên
